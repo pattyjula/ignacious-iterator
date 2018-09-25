@@ -63,6 +63,7 @@ def update_mph(where_clause, new_val):
             #print(row)
             row[0]= new_val
             cursor.updateRow(row)
-
+	
+# Loop through mphdict and update field with function update_mph
 for where_clause, new_val in mphdict.items():
     update_mph(where_clause, new_val)
