@@ -1,5 +1,8 @@
 # ignacious-iterator
 
+## Summary
+Automate populating schema in update feature class so it can be easily imported to production dataset
+
 ## Need for script
 
 Sometimes in a GIS database, it is neccesary to import rows to a "production" feature class from the attribute table of an "update" feature class. These tables might contain different schemas. This [script](https://stackoverflow.com/questions/19314342/python-sqlalchemy-pass-parameters-in-connection-execute) in this repository prepares the update feature class so it is ready to "append" to the production feature class. 
