@@ -4,9 +4,9 @@
 Automate populating schema in update feature class so it can be easily imported to production dataset
 
 ## Need for script
-This script was developed out of a need to import records from one attribute table to a production dataset, where the two datasets have different schemas. Aside from differing schemas, the field values require translation. For example, the value 5 in the source data needs to be populated as 1500 in the production dataset. The Python [script](https://stackoverflow.com/questions/19314342/python-sqlalchemy-pass-parameters-in-connection-execute) in this repository prepares the update feature class so it is ready to "append" to the production feature class. 
+This script was developed out of a need to import records from one attribute table to a production dataset, where the two datasets have different schemas. In addition to from differing schemas, the field values require translation from one dataset to the other. For example, the value 5 in the source data needs to be populated as 1500 in the production dataset. The Python [script](https://stackoverflow.com/questions/19314342/python-sqlalchemy-pass-parameters-in-connection-execute) in this repository prepares the update feature class so it is ready to "append" to the production feature class. 
 
-The method presented here does not represent the best, or only, method to prepare data for import to another dataset. 
+The method presented here does not represent the best, or only, method to prepare data for import to another dataset. It is valuable to script a challenge in standardizing data.
 
 ## Script steps
 
