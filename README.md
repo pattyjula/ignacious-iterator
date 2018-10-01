@@ -14,4 +14,4 @@ First, the script will add a new field to the update feature class matching the 
 
 This script contains the SQL statement and the new values within a dictionary. A function, called ```update_type```, uses an UpdateCursor to complete the processing for the key, value pairs in the dictionary.  A for loop calls these key, values pairs and instantiates the function.
 
-The first dictionary and script process street type. A similar process, creating a dictionary and function, is setup to populate speed limit values. This script demonstrates value of resusable code.
+The first dictionary and script process street type. A similar process, creating a dictionary and function, is setup to populate speed limit values. This script demonstrates value of resusable code to automate otherwise tedious processes.
