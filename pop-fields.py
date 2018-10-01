@@ -60,7 +60,7 @@ mphdict ={"ST_DESIG IN (12,13)" : 40,"ST_DESIG IN (14)" : 45,
 def update_mph(where_clause, new_val):
     with arcpy.da.UpdateCursor(fc, [pdmphfield], where_clause) as cursor:
         for row in cursor:
-            #print(row)
+            # Get value and update row
             row[0]= new_val
             cursor.updateRow(row)
 	
