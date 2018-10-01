@@ -2,7 +2,7 @@
 
 ## Need for script
 
-Sometimes in a GIS database, it is neccesary to import rows to a "production" feature class from the attribute table of a newer "update" feature class. These tables might contain a different schema. This script prepares the update feature class so it is ready to "append" to the production feature class. 
+Sometimes in a GIS database, it is neccesary to import rows to a "production" feature class from the attribute table of an "update" feature class. These tables might contain different schemas. This (script)[https://stackoverflow.com/questions/19314342/python-sqlalchemy-pass-parameters-in-connection-execute] in this repository prepares the update feature class so it is ready to "append" to the production feature class. 
 
 ## Script steps
 
@@ -10,4 +10,4 @@ First, the script will add a new field to the update feature class matching the 
 
 This script contains the SQL statement and the new values within a dictionary. A function, called ```update_type```, uses an UpdateCursor to complete the processing for the key, value pairs in the dictionary.  A for loop calls these key, values pairs and instantiates the function.
 
-The first dictionary and script process street type. A similar process, creating a dictionary and function, is setup up determine speed limit. This script demonstrates value of resusable code.
+The first dictionary and script process street type. A similar process, creating a dictionary and function, is setup to populate speed limit values. This script demonstrates value of resusable code.
